@@ -31,6 +31,7 @@ public class ServletEx extends HttpServlet {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
 		out.print("Hello JSP");
+		out.print("testGitPushing");
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
