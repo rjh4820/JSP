@@ -27,7 +27,6 @@ public class TempFilter implements Filter {
 		
 		//response Filter
 	}
-
 	public void destroy() {
 		System.out.println("filer destroy()");	
 	}
