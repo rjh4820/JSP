@@ -9,8 +9,8 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
-  <context-param>
+
+ <context-param>
   	<param-name>imgDir</param-name>
   	<param-value>/upload/img</param-value>
   </context-param>
@@ -40,5 +40,20 @@
   	<url-pattern>/jspEx.jsp</url-pattern>
   </servlet-mapping>
   
-  
+  <servlet>
+  	<servlet-name>servletEx</servlet-name>
+  	<servlet-class>com.servlet.ServletEx</servlet-class>
+  	<init-param>
+  		<param-name>adminId2</param-name>
+  		<param-value>admin2</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>adminPw2</param-name>
+  		<param-value>12342</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>servletEx</servlet-name>
+  	<url-pattern>/se</url-pattern>
+  </servlet-mapping>
 </web-app>
