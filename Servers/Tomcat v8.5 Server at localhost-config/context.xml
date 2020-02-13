@@ -25,4 +25,25 @@
     <!--
     <Manager pathname="" />
     -->
+    
+    <Resource 
+    	auto="Container"
+    	driverClassName="oracle.jdbc.driver.OracleDriver"
+    	url="jdbc:oracle:thin:@localhost:1521:xe"
+    	username="scott"
+    	password="tiger"
+    	name="jdbc/Oracle11g"
+    	type="javax.sql.DataSource"
+    	maxActive="4"
+    	maxWait="10000" />
+    	<!-- 
+    	atuo: 해당 톰캣 컨테이너를 커넥션풀로 사용하겠다는 명시
+    	username: oracle user name
+    	password: oracle user password
+    	name: dbcp(Database Connection Pool) name
+    	type: 커넥션을 만들어주는 객체(API)
+    	maxActive: 연결 최대 허용 개수(넘으면 막히는게 아니라 더생김)
+    	maxWait: 한 개가 더 늘어날 때까지 기다리는 시간(1/1000초)
+    	maxIdle: 항상 연결상태를 유지하는 개수
+    	 -->
 </Context>
